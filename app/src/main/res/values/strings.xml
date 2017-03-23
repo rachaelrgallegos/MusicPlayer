@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item
+    android:id="@+id/action_shuffle"
+    android:icon="@drawable/rand"
+    android:orderInCategory="1"
+    android:showAsAction="always"
+    android:title="Shuffle"/>
+
+<item
+    android:id="@+id/action_end"
+    android:icon="@drawable/end"
+    android:orderInCategory="2"
+    android:showAsAction="always"
+    android:title="End"/>
+
+</menu>
+
+        <string name="facebook_application_id">1091907457580429
+</string>
+
+</resources>

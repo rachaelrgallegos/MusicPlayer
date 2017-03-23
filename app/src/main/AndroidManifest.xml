@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rachael.musicplayer">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait">
+        <activity android:name=".TMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name=".MainActivity" />
+        <service android:name="com.example.rachael.MusicService" />
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider1091907457580429"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+    </application>
+
+
+
+
+</manifest>
